@@ -9,6 +9,7 @@ services:
       - ${ENCODED_VIDEO_LOCATION}:/usr/src/app/upload/encoded-video
       - ${PROFILE_LOCATION}:/usr/src/app/upload/profile
       - ${BACKUP_LOCATION}:/usr/src/app/upload/backups
+      - /etc/localtime:/etc/localtime:ro
     
     ports:
       - 2283:2283
